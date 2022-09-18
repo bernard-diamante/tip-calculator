@@ -6,7 +6,6 @@ import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AppCompatActivity
-import com.bernarddiamante.tipcalc.R
 import com.bernarddiamante.tipcalc.databinding.ActivityMainBinding
 import java.text.NumberFormat
 import kotlin.math.ceil
@@ -32,8 +31,8 @@ class MainActivity : AppCompatActivity() {
         binding.btCalculate.setOnClickListener { calculateTip() }
 
         // Set up a key listener on the EditText field to listen for "enter" button presses
-        binding.etCostOfService.setOnKeyListener {
-            view, keyCode, _ -> handleKeyEvent(view, keyCode)
+        binding.etCostOfService.setOnKeyListener { view, keyCode, _ ->
+            handleKeyEvent(view, keyCode)
         }
     }
 
@@ -83,7 +82,8 @@ class MainActivity : AppCompatActivity() {
     private fun handleKeyEvent(view: View, keyCode: Int): Boolean {
         if (keyCode == KeyEvent.KEYCODE_ENTER) {
             // Hide the keyboard
-            val inputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            val inputMethodManager =
+                getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
             return true
         }
