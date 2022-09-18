@@ -1,4 +1,4 @@
-package com.bernarddiamante.TipCalcy
+package com.bernarddiamante.tipcalc
 
 import org.junit.Test
 

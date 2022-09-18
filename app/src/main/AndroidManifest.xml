@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.bernarddiamante.TipCalcy">
+    package="com.bernarddiamante.tipcalc">
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Testing"
         tools:targetApi="31">
         <activity
-            android:name="com.bernarddiamante.TipCalcy.MainActivity"
+            android:name="com.bernarddiamante.tipcalc.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
